@@ -7,9 +7,13 @@ Features
 --------
 
 **Fetch Commit Data**: Retrieve commits from a specified Azure DevOps repository using a Personal Access Token (PAT).
+
 **Data Processing**: Parse and organize commit data for meaningful analysis.
+
 **Reporting and Visualization**: Generate reports and save visualizations in the `evidences/yyyy-mm/` folder structure, with automatic subfolder categorization by file type (e.g., `.png` for images).
+
 **Excel Export**: Export results to an Excel sheet for further analysis.
+
 
 Prerequisites
 -------------
