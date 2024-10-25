@@ -15,7 +15,7 @@ token = '<YOUR_TOKEN_HERE>'
 encoded_token = base64.b64encode(f":{token}".encode()).decode()
 
 # URL base da API para buscar repositórios do projeto
-repos_url = f'https://dev.azure.com/{organization}/{project}/_apis/git/repositories?api-version=7.0'
+repos_url = f'https://dev.azure.com/{organization}/{project}/_apis/git/repositories?api-version=7.1'
 
 # Headers com autenticação
 headers = {
@@ -39,7 +39,7 @@ def get_commits(repo_id):
     commits = []
     base_url = f'https://dev.azure.com/{organization}/{project}/_apis/git/repositories/{repo_id}/commits'
     params = {
-        'api-version': '7.0',
+        'api-version': '7.1',
         '$top': 1000,
         'searchCriteria.fromDate': '2024-01-01T00:00:00Z'  # Buscar a partir de 2024
     }
