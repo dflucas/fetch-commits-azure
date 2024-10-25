@@ -39,7 +39,7 @@ def get_commits(repo_id):
     commits = []
     base_url = f'https://dev.azure.com/{organization}/{project}/_apis/git/repositories/{repo_id}/commits'
     params = {
-        'api-version': '6.0',
+        'api-version': '7.0',
         '$top': 1000,
         'searchCriteria.fromDate': '2024-01-01T00:00:00Z'  # Buscar a partir de 2024
     }
