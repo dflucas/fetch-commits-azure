@@ -87,6 +87,8 @@ def extract_name_from_email(email):
 # Função para identificar o projeto a partir do título do commit
 def extract_project_from_title(title):
     # Usando expressões regulares para capturar o padrão .*?-
+    # Converte o título para string para evitar erros caso venha None ou outro tipo
+    title = str(title)
     match = re.search(r'(XXXXX.*?)-', title)  # Regex para encontrar DSUP seguido de qualquer coisa até o hífen
     if match:
         return match.group(1)  # Retorna o projeto encontrado
