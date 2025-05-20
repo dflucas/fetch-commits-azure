@@ -1,7 +1,10 @@
 Fetch Commits from Azure DevOps
 ===============================
 
-This project fetches commit data from an Azure DevOps repository, processes it, and generates reports. It includes tools for creating visualizations and exporting data, making it ideal for tracking development progress and analyzing commit patterns over time.
+This project fetches commit data from an Azure DevOps repository, processes it,
+and generates reports. It includes tools for creating visualizations and
+exporting data, making it ideal for tracking development progress and
+analyzing commit patterns over time.
 
 Features
 --------
